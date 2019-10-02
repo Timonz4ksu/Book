@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(16, 34, 73);
+    padding: ;
+    margin: ;
+    font-kerning: auto;
+    line-height:;
+    font-family: poor richard;
+    font-size: 1em;
+}
+pre:first-child{
+    position: absolute;
+    font-size: .5em;
+    margin-left: 0vw;
+}
+pre{
+    font-family: poor richard;
+    margin-left: 20vw;
+    position: relative;
+}
+h1{
+    background-color: rgba(255, 255, 0, 0.699);
+    color: white;
+    font-size: 4em;
+    height: 11vh;
+}
+hr{
+    width: 50vw;
+}
+br{
+    position: absolute;
+}
+big{
+    font-size: 4em;
+}
+p{
+    margin-left: 2vw;
+    color: rgb(112, 112, 112);
+    font-size: 2em;
+    font-kerning: auto;
+    font-family: poor richard;
+    width: 55vw;
+    line-height: 1.5em;
+}
+.ch:nth-child(2n+1){
+    background-color: cadetblue;
+    width: 57vw;
+    margin-left: 40vw;
+    margin-right: 2vw;
+}
+.ch{
+    background-color: rgb(36, 104, 81);
+    width: ;
+}
+.toc{
+font-size: 1em;
+}
+h2{
+    color: white;
+    font-size: 3em;
+}
+
+
+@media only screen and (max-width: 800px) {
+    body{
+        background-color: darkgray;
+        padding: 0;
+        margin: 0;
+        font-kerning: auto;
+        line-height: 1em;
+        font-family: poor richard;
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+    body{
+        background-color: rgb(105, 0, 0);
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        font-kerning: auto;
+        font-family: poor richard;
+    }
+}
