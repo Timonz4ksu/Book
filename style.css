@@ -6,22 +6,124 @@ body{
     line-height:;
     font-family: poor richard;
     font-size: 1em;
+    z-index: 100;
+}
+.circle{
+    background-color: rgb(246, 242, 220);
+    position: absolute;
+    height: 500px;
+    width:500px;
+    border: 30px solid rgba(19, 17, 112, 0.253);
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+    
+}
+.circle1{
+    background-color: rgba(175, 166, 141, 0.452);
+    position: absolute;
+    height: 50px;
+    width:100px;
+    border: 10px solid rgba(255, 255, 255, 0.253);
+    border-radius: 50%;
+    top: 270px;
+    right: 100px;
+    transform: rotate(20deg)
+}
+.circle2{
+    background-color: rgba(175, 166, 141, 0.452);
+    position: absolute;
+    height: 30px;
+    width:80px;
+    border: 10px solid rgba(255, 255, 255, 0.253);
+    border-radius: 50%;
+    top: 350px;
+    right: 240px;
+    transform: rotate(40deg)
+}
+.circle3{
+    background-color: rgba(175, 166, 141, 0.452);
+    position: absolute;
+    height: 60px;
+    width:120px;
+    border: 10px solid rgba(255, 255, 255, 0.253);
+    border-radius: 50%;
+    top: 100px;
+    right: 300px;
+    transform: rotate(70deg)
+}
+.circle4{
+    background-color: rgba(175, 166, 141, 0.452);
+    position: absolute;
+    height: 100px;
+    width:160px;
+    border: 10px solid rgba(255, 255, 255, 0.253);
+    border-radius: 50%;
+    top: 70px;
+    right: -50px;
+    transform: rotate(20deg)
+}
+.circle5{
+    background-color: rgba(175, 166, 141, 0.452);
+    position: absolute;
+    height: 60px;
+    width:120px;
+    border: 10px solid rgba(255, 255, 255, 0.253);
+    border-radius: 50%;
+    top: -40px;
+    right: 100px;
+    transform: rotate(120deg);
+}
+.line1{
+    background-color: yellow;
+    position: absolute;
+    height: 2500px;
+    width: 30px;
+    border-radius:40%;
+    transform: rotate(70deg);
+    top: -500px;
+    left: -400px;
+    z-index: 10;
+}
+.line2{
+    background-color: yellow;
+    position: absolute;
+    height: 2500px;
+    width: 30px;
+    border-radius:40%;
+    transform: rotate(70deg);
+    top: -400px;
+    left: -500px
+}
+.line3{
+    background-color: yellow;
+    position: absolute;
+    height: 2500px;
+    width: 30px;
+    border-radius:40%;
+    transform: rotate(70deg);
+    top: -450px;
+    left: -700px
 }
 pre:first-child{
     position: absolute;
-    font-size: .5em;
+    font-size: .8em;
     margin-left: 0vw;
 }
 pre{
     font-family: poor richard;
     margin-left: 20vw;
     position: relative;
+    color: white;
+    font-size: 1em;
 }
 h1{
-    background-color: rgba(255, 255, 0, 0.699);
     color: white;
     font-size: 4em;
     height: 11vh;
+    width: 3%;
+    margin-left: 47vw;
+    padding-bottom: 550px;
 }
 hr{
     width: 50vw;
@@ -48,7 +150,6 @@ p{
     margin-right: 2vw;
 }
 .ch{
-    background-color: rgb(36, 104, 81);
     width: ;
 }
 .toc{
@@ -57,12 +158,56 @@ font-size: 1em;
 h2{
     color: white;
     font-size: 3em;
+    z-index: 100;
 }
 
+/*--------tablets-----------------*/
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+    body{
+        background-color: rgb(16, 34, 73);
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        font-kerning: auto;
+        font-family: poor richard;
+    }
+    .line1{
+        background-color: yellow;
+        position: absolute;
+        height: 2500px;
+        width: 30px;
+        border-radius:40%;
+        transform: rotate(70deg);
+        top: -400px;
+        left: -800px;
+    }
+    .line2{
+        background-color: yellow;
+        position: absolute;
+        height: 2500px;
+        width: 30px;
+        border-radius:40%;
+        transform: rotate(70deg);
+        top: -300px;
+        left: -900px
+    }
+    .line3{
+        background-color: yellow;
+        position: absolute;
+        height: 2500px;
+        width: 30px;
+        border-radius:40%;
+        transform: rotate(70deg);
+        top: -350px;
+        left: -1100px
+    }
+}
 
+/*---------smart phones----------*/
 @media only screen and (max-width: 800px) {
     body{
-        background-color: darkgray;
+        background-color: rgb(16, 34, 73);
         padding: 0;
         margin: 0;
         font-kerning: auto;
@@ -70,16 +215,40 @@ h2{
         font-family: poor richard;
         font-size: 1.5em;
     }
-}
-
-@media only screen and (min-width: 800px) and (max-width: 1280px) {
-    body{
-        background-color: rgb(105, 0, 0);
-        padding: 0;
-        margin: 0;
-        height: 100vh;
-        width: 100vw;
-        font-kerning: auto;
+    .circle{
+        top: -300px;
+        right: -100px;
+    }
+    .circle1{
+        top: 70px;
+        right: 100px;
+    }
+    .circle2{
+        top: 150px;
+        right: 240px;
+    }
+    .circle3{
+        top: -100px;
+        right: 300px;
+    }
+    .circle4{
+        top: -130px;
+        right: -50px;
+    }
+    .circle5{
+        top: -240px;
+        right: 100px;
+    }
+    .lines{
+        display: none
+    }
+    pre{
+        background-color: aqua;
         font-family: poor richard;
+        margin-left: 20vw;
+        margin-top: 25vh;
+        position: relative;
+        color: white;
+        font-size: .1em;
     }
 }
